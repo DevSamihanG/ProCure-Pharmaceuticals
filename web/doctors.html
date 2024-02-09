@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult Doctors</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Consult Doctors</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Qualifications</th>
+                <th>Experience</th>
+                <th>Availability</th>
+                <th>Fees</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+    <td>Dr. Aryan Kumar</td>
+    <td>General Physician</td>
+    <td>MD, General Medicine</td>
+    <td>12 years</td>
+    <td>
+        <select>
+            <option>Mon, 9 am - 5 pm</option>
+            <option>Wed, 9 am - 5 pm</option>
+            <option>Fri, 9 am - 5 pm</option>
+        </select>
+    </td>
+    <td>$120</td>
+    <td><button onclick="bookAppointment('Dr. Aryan Kumar')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Smita Gupta</td>
+    <td>Cardiologist</td>
+    <td>MD, Cardiology</td>
+    <td>15 years</td>
+    <td>
+        <select>
+            <option>Mon, 2 pm - 8 pm</option>
+            <option>Wed, 2 pm - 8 pm</option>
+            <option>Fri, 2 pm - 8 pm</option>
+        </select>
+    </td>
+    <td>$150</td>
+    <td><button onclick="bookAppointment('Dr. Smita Gupta')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Arjun Sharma</td>
+    <td>Dermatologist</td>
+    <td>MD, Dermatology</td>
+    <td>10 years</td>
+    <td>
+        <select>
+            <option>Tue, 9 am - 4 pm</option>
+            <option>Thu, 9 am - 4 pm</option>
+            <option>Sat, 9 am - 4 pm</option>
+        </select>
+    </td>
+    <td>$100</td>
+    <td><button onclick="bookAppointment('Dr. Arjun Sharma')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Priya Singh</td>
+    <td>Gynecologist</td>
+    <td>MD, Obstetrics and Gynecology</td>
+    <td>18 years</td>
+    <td>
+        <select>
+            <option>Mon, 11 am - 7 pm</option>
+            <option>Wed, 11 am - 7 pm</option>
+            <option>Fri, 11 am - 7 pm</option>
+        </select>
+    </td>
+    <td>$130</td>
+    <td><button onclick="bookAppointment('Dr. Priya Singh')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Ankit Verma</td>
+    <td>Pediatrician</td>
+    <td>MD, Pediatrics</td>
+    <td>14 years</td>
+    <td>
+        <select>
+            <option>Tue, 10 am - 6 pm</option>
+            <option>Thu, 10 am - 6 pm</option>
+            <option>Sat, 10 am - 6 pm</option>
+        </select>
+    </td>
+    <td>$110</td>
+    <td><button onclick="bookAppointment('Dr. Ankit Verma')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Ritu Agarwal</td>
+    <td>ENT Specialist</td>
+    <td>MS, ENT</td>
+    <td>16 years</td>
+    <td>
+        <select>
+            <option>Mon, 3 pm - 9 pm</option>
+            <option>Wed, 3 pm - 9 pm</option>
+            <option>Fri, 3 pm - 9 pm</option>
+        </select>
+    </td>
+    <td>$140</td>
+    <td><button onclick="bookAppointment('Dr. Ritu Agarwal')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Varun Malhotra</td>
+    <td>Orthopedic Surgeon</td>
+    <td>MS, Orthopedics</td>
+    <td>20 years</td>
+    <td>
+        <select>
+            <option>Tue, 2 pm - 8 pm</option>
+            <option>Thu, 2 pm - 8 pm</option>
+            <option>Sat, 2 pm - 8 pm</option>
+        </select>
+    </td>
+    <td>$160</td>
+    <td><button onclick="bookAppointment('Dr. Varun Malhotra')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Naina Sharma</td>
+    <td>Ophthalmologist</td>
+    <td>MS, Ophthalmology</td>
+    <td>13 years</td>
+    <td>
+        <select>
+            <option>Mon, 10 am - 5 pm</option>
+            <option>Wed, 10 am - 5 pm</option>
+            <option>Fri, 10 am - 5 pm</option>
+        </select>
+    </td>
+    <td>$130</td>
+    <td><button onclick="bookAppointment('Dr. Naina Sharma')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Anand Kumar</td>
+    <td>Neurologist</td>
+    <td>DM, Neurology</td>
+    <td>17 years</td>
+    <td>
+        <select>
+            <option>Tue, 1 pm - 7 pm</option>
+            <option>Thu, 1 pm - 7 pm</option>
+            <option>Sat, 1 pm - 7 pm</option>
+        </select>
+    </td>
+    <td>$180</td>
+    <td><button onclick="bookAppointment('Dr. Anand Kumar')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Neha Kapoor</td>
+    <td>Psychiatrist</td>
+    <td>MD, Psychiatry</td>
+    <td>14 years</td>
+    <td>
+        <select>
+            <option>Mon, 12 pm - 6 pm</option>
+            <option>Wed, 12 pm - 6 pm</option>
+            <option>Fri, 12 pm - 6 pm</option>
+        </select>
+    </td>
+    <td>$170</td>
+    <td><button onclick="bookAppointment('Dr. Neha Kapoor')">Book Appointment</button></td>
+</tr>
+
+<tr>
+    <td>Dr. Sameer Agarwal</td>
+    <td>Dentist</td>
+    <td>MDS, Dentistry</td>
+    <td>11 years</td>
+    <td>
+        <select>
+            <option>Tue, 11 am - 5 pm</option>
+            <option>Thu, 11 am - 5 pm</option>
+            <option>Sat, 11 am - 5 pm</option>
+        </select>
+    </td>
+    <td>$120</td>
+    <td><button onclick="bookAppointment('Dr. Sameer Agarwal')">Book Appointment</button></td>
+</tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        function bookAppointment(doctorName) {
+            
+            // Implement logic to book appointment for the specified doctor
+            alert("Appointment booked with " + doctorName);
+        }
+    </script>
+
+</body>
+</html>
